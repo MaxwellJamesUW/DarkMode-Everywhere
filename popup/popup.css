@@ -1,0 +1,60 @@
+body {
+  width: max-content;
+  margin: 0;
+  font-size: 1rem;
+  user-select: none;
+}
+
+button {
+  width: 100%;
+}
+
+input[type="color"] {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.popup-title {
+  font-weight: 900;
+  background-color: lightblue;
+  color: black;
+  width: 100%;
+  padding: 6px;
+}
+
+.popup-content {
+  font-family: monospace;
+  padding: 5px;
+}
+
+p {
+  text-align: center;
+  padding: 8px 0 0;
+  margin: 0;
+}
+
+.checkbox-container {
+  margin: 12px 6px 6px;
+  padding: 6px auto;
+}
+
+.checkbox-container>label{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox-container>label:hover {
+  cursor: pointer;
+}
+
+input:hover{
+  cursor: pointer;
+}
+
+#enable {
+  padding-top: 5px;
+}
