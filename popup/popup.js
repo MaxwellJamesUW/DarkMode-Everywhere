@@ -31,7 +31,7 @@ const tColorInput = document.getElementById("tcolor-input");
 const fontInput = document.getElementById("typeface");
 const enableCheckbox = document.getElementById("enable");
 
-console.log(fontInput.value);
+
 const sendMessage = (e) => {
   // only send the message if the 'enabled' box is checked
   if(document.getElementById("enable").checked){
