@@ -31,7 +31,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 function changeStyles (ele) {
-  //ele.className = '';
   ele.style.backgroundColor = newColor;
   ele.style.color = newTcolor;
   if (newFont != '')

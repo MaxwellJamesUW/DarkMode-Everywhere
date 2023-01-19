@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "DarkMode Everywhere",
-    "description": "Message passing example that changes a background color.",
+    "description": "Change the background color, text color, and font on any page.",
     "version": "1.0",
     "action": {
         "default_popup": "popup/popup.html",
