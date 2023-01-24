@@ -23,14 +23,12 @@ async function sendMessageToContentScript(message) {
   catch(error){
     window.alert("Can't change the style of this page!")
   }
-  
 }
 
 const colorInput = document.getElementById("color-input");
 const tColorInput = document.getElementById("tcolor-input");
 const fontInput = document.getElementById("typeface");
-const enableCheckbox = document.getElementById("enable");
-
+const enableCheckbox = document.getElementById("enable")
 
 const sendMessage = (e) => {
   // only send the message if the 'enabled' box is checked

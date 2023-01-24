@@ -17,14 +17,16 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
   // Set the styles for these tags
   changeStyles(document.body);
-  Array.from(document.getElementsByTagName("p")).foreach(changeStyles);
-  Array.from(document.getElementsByTagName("div")).foreach(changeStyles);
-  Array.from(document.getElementsByTagName("h1")).foreach(changeStyles);
-  Array.from(document.getElementsByTagName("h2")).foreach(changeStyles);
-  Array.from(document.getElementsByTagName("h3")).foreach(changeStyles);
-  Array.from(document.getElementsByTagName("h4")).foreach(changeStyles);
-  Array.from(document.getElementsByTagName("h5")).foreach(changeStyles);
-
+  //for each kind of tag: get the html collection of all tags on the page, cast it as an array
+  //then iterate through it and call the changeStyles function for each individual tag
+  Array.from(document.getElementsByTagName("p")).forEach(changeStyles);
+  Array.from(document.getElementsByTagName("div")).forEach(changeStyles);
+  Array.from(document.getElementsByTagName("h1")).forEach(changeStyles);
+  Array.from(document.getElementsByTagName("h2")).forEach(changeStyles);
+  Array.from(document.getElementsByTagName("h3")).forEach(changeStyles);
+  Array.from(document.getElementsByTagName("h4")).forEach(changeStyles);
+  Array.from(document.getElementsByTagName("h5")).forEach(changeStyles);
+  
   // Use the sendResponse function passed in by chrome to send a response
   sendResponse(`the background color has been changed from ${oldColor} to ${newColor}, and the text has changed from 
   ${oldTcolor} to ${newTcolor}!`);
